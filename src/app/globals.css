@@ -10,13 +10,17 @@
 @media (prefers-color-scheme: dark) {
   :root {
   /* Colors */
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
+  --primary-color: #F17100;
+  --secondary-color: #302f2e;
   --background-color: #f4f4f4;
   --text-color: #333333;
-  --link-color: #1abc9c;
+  --link-color: #302f2e;
   --error-color: #e74c3c;
   --foreground-color:#000000;
+  --headerbg-color:#FFF5E3;
+  --hover-color:#374151;
+  --heading-color:black;
+  --subheading-color:#2d3748;
 
   /* Typography */
   --font-family: 'Poppins';
@@ -46,4 +50,22 @@ body {
 
 h1,p{
   color: var(--foreground-color);
+}
+
+/* Ensuring the page takes up full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* This makes the layout fill the entire page */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Ensure the footer stays at the bottom */
+footer {
+  margin-top: auto;
 }

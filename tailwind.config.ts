@@ -10,9 +10,17 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        foreground: "var(--foreground-color)",
+        primarycolor:"var(--primary-color)",
+        secondarycolor:"var(--secondary-color)",
+        headercolor:"var(--headerbg-color)",
+        hovercolor:"var(--hover-color)",
+        headingcolor:"var(--heading-color)",
+        subheadingcolor:"var(--subheading-color)",
+        textcolor:"var(--text-color)",
       },
     },
   },
+  
   plugins: [],
 } satisfies Config;
