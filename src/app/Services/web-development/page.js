@@ -31,7 +31,7 @@ const WebDevelopmentPage = () => {
           </div>
 
           {/* Right Section: Content */}
-          <div className="w-full xl:w-1/2 text-justify md:text-left md:px-8 xl:px-0">
+          <div className="w-full xl:w-1/2 text-left md:text-left md:px-8 xl:px-0">
             
             {/* Heading for Web Development */}
             <div className="xl:text-left md:text-center">

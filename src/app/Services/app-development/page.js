@@ -31,7 +31,7 @@ const MobileAppDevelopmentPage = () => {
           </div>
 
           {/* Right Section: Content */}
-          <div className="w-full xl:w-1/2 text-justify md:text-left">
+          <div className="w-full xl:w-1/2 text-left md:text-left">
             {/* Main Heading */}
             <div className="xl:text-left md:text-center">
               <Heading title="Mobile App Development" />

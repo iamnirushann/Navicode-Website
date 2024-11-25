@@ -30,7 +30,7 @@ const AIModulesDevelopmentPage = () => {
           </div>
 
           {/* Right Section: Content */}
-          <div className="w-full xl:w-1/2 text-justify md:text-left md:px-8 xl:px-0">
+          <div className="w-full xl:w-1/2 text-left md:text-left md:px-8 xl:px-0">
             {/* Main Heading */}
             <div className="xl:text-left md:text-center">
               <Heading title="AI Modules Development" />
