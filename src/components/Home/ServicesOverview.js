@@ -45,19 +45,19 @@ const Services = () => {
   ];
 
   return (
-    <div className="bg-background py-12 lg:px-28 px-12 lg:pb-16 lg:pt-12">
+    <div className="bg-background py-12 lg:px-28 px-12 lg:pb-16 lg:pt-12 text-center">
       {/* Section Heading */}
       <div className="text-center mb-10 xl:mx-40">
         <Heading title="Services we provide" />
         {/* Section Description */}
         <Content
           title="Discover a range of tailored services designed to bring your ideas to life. 
-          Whether it's crafting user-centric designs, building robust web applications, or creating engaging mobile experiences, 
-          we are here to transform your vision into reality."
+            Whether it's crafting user-centric designs, building robust web applications, or creating engaging mobile experiences, 
+            we are here to transform your vision into reality."
         />
       </div>
       {/* Grid layout for displaying services */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:w-[1200px] xl:ml-60">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:w-[1200px] mx-auto">
         {/* Loop through the services array to render each service card */}
         {services.map((service) => (
           <ServiceCard
@@ -70,6 +70,7 @@ const Services = () => {
       </div>
     </div>
   );
+  
 };
 
 export default Services;
