@@ -1,71 +1,67 @@
+/* Tailwind CSS imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Root styles for light and dark color schemes */
 :root {
-  
+  /* Default color scheme (light mode) */
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
-  /* Colors */
-  --primary-color: #F17100;
-  --secondary-color: #302f2e;
-  --background-color: #f4f4f4;
-  --text-color: #333333;
-  --link-color: #302f2e;
-  --error-color: #e74c3c;
-  --foreground-color:#000000;
-  --headerbg-color:#FFF5E3;
-  --hover-color:#374151;
-  --heading-color:black;
-  --subheading-color:#2d3748;
+    /* Dark Mode Colors */
+    --primary-color: #F17100; /* Orange for primary actions or highlights */
+    --secondary-color: #302f2e; /* Dark color for secondary elements */
+    --background-color: #f4f4f4; /* Light background for dark mode */
+    --text-color: #333333; /* Dark text color */
+    --link-color: #302f2e; /* Dark link color */
+    --error-color: #e74c3c; /* Error color (red) */
+    --foreground-color: #000000; /* Foreground text color */
+    --headerbg-color: #FFF5E3; /* Light header background */
+    --hover-color: #374151; /* Color when hovering over elements */
+    --heading-color: black; /* Color for headings */
+    --subheading-color: #2d3748; /* Color for subheadings */
 
-  /* Typography */
-  --font-family: 'Poppins';
-  --font-size-base: 16px;
-  --font-size-large: 20px;
-  --font-size-small: 14px;
-  
+    /* Typography Settings */
+    --font-family: 'Poppins', sans-serif; /* Font family for text */
+    --font-size-base: 16px; /* Base font size */
+    --font-size-large: 20px; /* Larger font size for headings */
+    --font-size-small: 14px; /* Smaller font size for subtext */
+    
+    /* Spacing Variables */
+    --spacing-small: 0.5rem; /* Small padding or margin */
+    --spacing-medium: 1rem; /* Medium padding or margin */
+    --spacing-large: 2rem; /* Large padding or margin */
 
-  /* Spacing */
-  --spacing-small: 0.5rem;
-  --spacing-medium: 1rem;
-  --spacing-large: 2rem;
-
-  /* Borders */
-  --border-radius: 4px;
-
-  /* Shadows */
-  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Border & Shadow Styles */
+    --border-radius: 4px; /* Rounded corners */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
   }
 }
 
+/* Global body styles */
 body {
-  color: var(--foreground-color);
-  background: var(--background);
-  font-family: var(--font-family);
+  color: var(--foreground-color); /* Text color */
+  background: var(--background-color); /* Background color */
+  font-family: var(--font-family); /* Font family */
 }
 
-h1,p{
-  color: var(--foreground-color);
+/* Headings and paragraph text */
+h1, p {
+  color: var(--foreground-color); /* Ensuring text is consistent */
 }
 
-/* Ensuring the page takes up full height */
+/* Full page layout */
 html, body {
-  height: 100%;
-  margin: 0;
-}
-
-/* This makes the layout fill the entire page */
-body {
+  height: 100%; /* Ensure the page takes up the full height */
+  margin: 0; /* Remove default margins */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; /* Footer stays at the bottom */
 }
 
-/* Ensure the footer stays at the bottom */
+/* Footer styles */
 footer {
-  margin-top: auto;
+  margin-top: auto; /* Ensures footer stays at the bottom of the page */
 }

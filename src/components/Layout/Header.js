@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-const Header = () => {
+const Header = () => { 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
