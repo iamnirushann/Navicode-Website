@@ -2,6 +2,7 @@ import Layout from "@/components/Layout/Layout";
 import { FaJava, FaPython, FaJs, FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa"; // Importing icons for various technologies
 import Heading from "@/components/Common/Heading"; // Heading component for titles
 import Content from "@/components/Common/Content"; // Content component for displaying text
+import Image from 'next/image'; // Importing next/image for optimized images
 
 // UI/UX Design Page Component
 const UIUXDesignPage = () => {
@@ -23,10 +24,14 @@ const UIUXDesignPage = () => {
           
           {/* Left Section: Image */}
           <div className="w-full md:w-1/2">
-            <img
-              src="/images/Services.png" // Image representing UI/UX design services
+            {/* Replace <img> with next/image */}
+            <Image
+              src="/images/Services.png" // Image source
               alt="Services Illustration"
               className="w-full h-auto"
+              layout="responsive" // Makes the image responsive
+              width={800} // Width of the image
+              height={600} // Height of the image
             />
           </div>
 

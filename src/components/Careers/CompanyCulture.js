@@ -1,5 +1,5 @@
 import Heading from "@/components/Common/Heading"; // Import Heading component for the section title
-import Content from "@/components/Common/Content"; // Import Content component for handling content with lists
+import Image from "next/image"; // Import Image component for optimized images
 
 const CompanyCulture = () => (
   <div className="flex flex-col lg:flex-row justify-between p-5 md:p-10 m-5 md:m-10"> 
@@ -9,11 +9,13 @@ const CompanyCulture = () => (
     <div className="w-full lg:w-1/2 mb-5 lg:mb-0"> 
       {/* This section will take full width on smaller screens and 50% on larger screens */}
       <div className="relative inline-block">
-        <img
+        <Image
           src="/images/company-culture.jpg" // Image representing the company culture
           alt="Company Culture" // Alt text for accessibility
           className="w-full my-6 mx-0 md:mx-6 rounded-md shadow-md" 
           // Styling for the image: full width, margin, rounded corners, and shadow for effect
+          width={600} // Add width for optimization
+          height={400} // Add height for optimization
         />
         <div className="absolute top-6 left-8 bg-white p-1 rounded-full"></div>
         {/* This div creates a white circle on top of the image. It's for visual design */}

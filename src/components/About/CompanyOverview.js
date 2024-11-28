@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../Common/Card";
 import Heading from "../Common/Heading";
 import Content from "../Common/Content";
+import Image from "next/image"; // Import Image from next/image
 
 // The CompanyOverview component represents the section showing the company's details.
 const CompanyOverview = () => {
@@ -13,10 +14,13 @@ const CompanyOverview = () => {
           {/* Image Section */}
           <div className="flex justify-center items-center mb-4">
             {/* The company image */}
-            <img
-              src="/images/smilywomen.jpg"
+            <Image
+              src="/images/smilywomen.jpg" // Image source
               alt="A smiling woman representing our company"
               className="w-full max-w-[600px] h-auto rounded-lg"
+              width={600} // Specify width of the image
+              height={400} // Specify height of the image
+              layout="responsive" // Makes the image responsive
             />
           </div>
 

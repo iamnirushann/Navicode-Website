@@ -1,7 +1,8 @@
-"use client";
+'use client';
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image"; // Import Image from next/image
 
 const Header = () => { 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ const Header = () => {
         { name: "Web development", path: "/Services/web-development" },
         { name: "Mobile app development", path: "/Services/app-development" },
         { name: "UI/UX design", path: "/Services/ui-ux-design" },
-        { name: "AI modules development ", path: "/Services/ai-modules-development" },
+        { name: "AI modules development", path: "/Services/ai-modules-development" },
       ],
     },
     { name: "Careers", path: "/Careers" },
@@ -28,7 +29,13 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <img src="/images/logowithslogan_transprent.png" alt="Logo" className="h-20 w-31" />
+          <Image 
+            src="/images/logowithslogan_transprent.png" 
+            alt="Logo" 
+            width={240}  // Adjust the width accordingly
+            height={80}  // Adjust the height accordingly
+            className="h-20 w-31"
+          />
         </div>
 
         {/* Navbar Links for Larger Screens */}
@@ -47,9 +54,7 @@ const Header = () => {
                 </button>
                 {/* Dropdown Menu */}
                 <div
-                  className={`absolute z-10 left-0 mt-2 w-48 bg-primarycolor rounded-md shadow-lg transition-all duration-300 ${
-                    isDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"
-                  }`}
+                  className={`absolute z-10 left-0 mt-2 w-48 bg-primarycolor rounded-md shadow-lg transition-all duration-300 ${isDropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
                 >
                   {link.dropdown.map((item) => (
                     <Link

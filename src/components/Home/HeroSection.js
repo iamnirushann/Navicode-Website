@@ -5,8 +5,7 @@ import Modal from 'react-modal'; // Modal component for displaying the appointme
 import DatePicker from 'react-datepicker'; // DatePicker component for selecting dates
 import 'react-datepicker/dist/react-datepicker.css'; // Import CSS for DatePicker styling
 import Button from '../Common/Button'; // Reusable Button component
-import Heading from '../Common/Heading'; // Reusable Heading component
-import SubHeading from '../Common/SubHeading'; // Reusable SubHeading component (not used, but kept for structure)
+// Removed unused Heading and SubHeading imports
 
 const HeroSection = () => {
   // Modal state for controlling visibility

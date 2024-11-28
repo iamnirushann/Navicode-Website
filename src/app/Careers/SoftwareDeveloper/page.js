@@ -1,17 +1,14 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation"; // Importing useRouter for potential navigation (currently unused)
-
+import Image from 'next/image'; // Import Image component from next/image
 import Layout from "@/components/Layout/Layout"; // Import Layout component
 import Heading from "@/components/Common/Heading"; // Import custom Heading component
 import SubHeading from "@/components/Common/SubHeading"; // Import custom SubHeading component
-import Content from "@/components/Common/Content"; // Import Content component (currently unused)
-import ApplicationForm from "@/components/Careers/ApplicatonForm"; // Import ApplicationForm for the job application
+import ApplicationForm from "@/components/Careers/ApplicatonForm"; // Import ApplicationForm for job application
 
 const SoftwareDeveloper = () => {
   // State to manage visibility of the application form overlay
   const [isFormVisible, setIsFormVisible] = useState(false);
-  const router = useRouter(); // Router instance (currently unused)
 
   // Function to show the application form when "Apply Now" is clicked
   const handleApplyClick = () => {
@@ -30,10 +27,14 @@ const SoftwareDeveloper = () => {
           {/* Left Section (Image representing the hiring process) */}
           <div className="w-full xl:w-1/2 mb-5 xl:mb-0">
             <div className="relative inline-block w-full">
-              <img
+              {/* Replacing <img> with Image component for better performance */}
+              <Image
                 src="/images/hiring.jpg" // Image to represent hiring process
                 alt="Hiring"
                 className="w-full h-auto mx-auto md:mx-7 xl:mx-0 rounded-md"
+                layout="responsive"  // Responsive layout for image
+                width={800}  // Width of the image
+                height={600} // Height of the image
               />
             </div>
           </div>

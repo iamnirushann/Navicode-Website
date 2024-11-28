@@ -1,6 +1,5 @@
 import Card from './JobCard'; // Import the Card component to display individual job listings
 import Heading from "@/components/Common/Heading"; // Import Heading component for the main title
-import Content from '@/components/Common/Content'; // Import Content component for any additional content (although not used here)
 import SubHeading from '@/components/Common/SubHeading'; // Import SubHeading component for a subheading
 
 // JobListingGrid component that renders job opportunities in a grid

@@ -2,6 +2,7 @@
 import { FaJava, FaPython, FaJs, FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa"; 
 import Heading from "../Common/Heading"; // Importing custom Heading component
 import Content from "../Common/Content"; // Importing custom Content component
+import Image from "next/image"; // Import Image from next/image
 
 const ServicesSection = () => {
   // Array of technologies with corresponding icons
@@ -21,9 +22,12 @@ const ServicesSection = () => {
         
         {/* Left Image Section */}
         <div className="w-full md:w-1/2">
-          <img
-            src="./images/services.png" // Image for services section (update path as necessary)
+          {/* Use Next.js Image component for optimization */}
+          <Image
+            src="/images/services.png" // Path to the image
             alt="Services Illustration"
+            width={500}  // Define width
+            height={300} // Define height
             className="w-full h-auto" // Responsive image
           />
         </div>

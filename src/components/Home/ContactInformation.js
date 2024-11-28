@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../Common/Heading"; // Importing the Heading component to display the main heading
 import Content from "../Common/Content"; // Importing the Content component for displaying subtext
+import Image from "next/image"; // Import Image component from Next.js
 
 // Contact options, which includes different methods to reach out to the company
 const contactOptions = [
@@ -47,11 +48,14 @@ const ContactInformation = () => {
             className="text-center lg:text-left lg:flex lg:items-center lg:space-x-4" // Flexbox layout for mobile/desktop
           >
             {/* Icon Display */}
-            <img
-              src={option.icon} // Display the appropriate icon for the contact method
-              alt={option.title} // Alt text for the icon image
-              className="w-12 h-12 mx-auto lg:mx-0" // Icon size and alignment
-            />
+            <div className="w-12 h-12 mx-auto lg:mx-0">
+              <Image
+                src={option.icon} // Display the appropriate icon for the contact method
+                alt={option.title} // Alt text for the icon image
+                width={48} // Set width for optimization
+                height={48} // Set height for optimization
+              />
+            </div>
             {/* Title and Link Section */}
             <div>
               {/* Display the title for each contact method */}

@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation"; // Router is imported but not used here, can be removed
-
+import Image from "next/image"; // Import Image from next/image
 import Layout from "@/components/Layout/Layout"; // Layout component to wrap content
 import Heading from "@/components/Common/Heading"; // Custom Heading component
 import SubHeading from "@/components/Common/SubHeading"; // Custom SubHeading component
@@ -28,10 +27,14 @@ const Webdeveloper = () => {
           {/* Left Section (Image representing the hiring process) */}
           <div className="w-full xl:w-1/2 mb-5 xl:mb-0">
             <div className="relative inline-block w-full">
-              <img
-                src="/images/hiring.jpg" // Image used for the job listing
+              {/* Replacing <img> with Image from next/image */}
+              <Image
+                src="/images/hiring.jpg" // Image source
                 alt="Hiring"
                 className="w-full h-auto mx-auto md:mx-7 xl:mx-0 rounded-md"
+                layout="responsive" // Makes the image responsive
+                width={800} // Width of the image
+                height={600} // Height of the image
               />
               <div className="absolute top-6 left-8 bg-white p-1 rounded-full shadow-lg"></div> {/* Placeholder element */}
             </div>

@@ -2,7 +2,7 @@ import Layout from "@/components/Layout/Layout";
 import { FaJava, FaPython, FaJs, FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa"; // Importing technology icons
 import Heading from "@/components/Common/Heading"; // Heading component for titles
 import Content from "@/components/Common/Content"; // Content component for text
-import Image from 'next/image'; // Image component (not used here)
+import Image from 'next/image'; // Image component from next/image (now used)
 
 const MobileAppDevelopmentPage = () => {
   
@@ -23,10 +23,14 @@ const MobileAppDevelopmentPage = () => {
           
           {/* Left Section: Image */}
           <div className="w-full md:w-1/2">
-            <img
-              src="/images/Services.png"
+            {/* Replace <img> with next/image */}
+            <Image
+              src="/images/Services.png" // Image source
               alt="Services Illustration"
               className="w-full h-auto"
+              layout="responsive" // Makes the image responsive
+              width={800} // Width of the image
+              height={600} // Height of the image
             />
           </div>
 

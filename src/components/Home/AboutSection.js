@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "../Common/Heading";  // Import the Heading component
 import SubHeading from "../Common/SubHeading"; // Import the SubHeading component
 import Content from '../Common/Content';  // Import the Content component for displaying text
+import Image from 'next/image';  // Import the Image component from Next.js
 
 const WhyChooseUs = () => {
   return (
@@ -10,10 +11,12 @@ const WhyChooseUs = () => {
       <div className="relative w-full lg:w-1/2 flex justify-center mb-8 lg:mb-0 md:mr-8">
         {/* This div contains the image and provides some margin for medium screens */}
         <div className="w-80 h-80 lg:w-[540px] lg:h-[540px] overflow-hidden rounded-3xl shadow-2xl">
-          <img
-            src="./images/person-working-html-computer.png" // Make sure the image path is correct
+          <Image
+            src="/images/person-working-html-computer.png" // Image source path
             alt="Team working on web development project"
             className="w-full h-full object-cover" // Ensures the image covers the full area and is responsive
+            width={540} // Set width for optimization
+            height={540} // Set height for optimization
           />
         </div>
       </div>

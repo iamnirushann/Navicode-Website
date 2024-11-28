@@ -4,14 +4,14 @@ import Heading from "../Common/Heading"; // Import Heading component for the sec
 const ProfessionalsSection = () => {
   // Sample data array containing professional information
   const professionals = [
-    { id: 1, name: "Name", job: "Job", imageSrc: "./images/employee.png" },
-    { id: 2, name: "Name", job: "Job", imageSrc: "./images/employee.png" },
-    { id: 3, name: "Name", job: "Job", imageSrc: "./images/employee.png" },
-    { id: 4, name: "Name", job: "Job", imageSrc: "./images/employee.png" },
-    { id: 5, name: "Name", job: "Job", imageSrc: "./images/employee.png" },
-    { id: 6, name: "Name", job: "Job", imageSrc: "./images/employee.png" },
-    { id: 7, name: "Name", job: "Job", imageSrc: "./images/employee.png" },
-    { id: 8, name: "Name", job: "Job", imageSrc: "./images/employee.png" },
+    { id: 1, name: "Name", job: "Job", imageSrc: "/images/employee.png" },
+    { id: 2, name: "Name", job: "Job", imageSrc: "/images/employee.png" },
+    { id: 3, name: "Name", job: "Job", imageSrc: "/images/employee.png" },
+    { id: 4, name: "Name", job: "Job", imageSrc: "/images/employee.png" },
+    { id: 5, name: "Name", job: "Job", imageSrc: "/images/employee.png" },
+    { id: 6, name: "Name", job: "Job", imageSrc: "/images/employee.png" },
+    { id: 7, name: "Name", job: "Job", imageSrc: "/images/employee.png" },
+    { id: 8, name: "Name", job: "Job", imageSrc: "/images/employee.png" },
   ];
 
   return (

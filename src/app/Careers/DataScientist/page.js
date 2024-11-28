@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
-
+import Image from "next/image";  // Importing Image component
 import Layout from "@/components/Layout/Layout"; // Importing Layout component
 import Heading from "@/components/Common/Heading"; // Importing custom Heading component
 import SubHeading from "@/components/Common/SubHeading"; // Importing custom SubHeading component
@@ -9,8 +8,7 @@ import ApplicationForm from "@/components/Careers/ApplicatonForm"; // Importing 
 
 const Datascientist = () => {
   // State to handle the visibility of the application form overlay
-  const [isFormVisible, setIsFormVisible] = useState(false); 
-  const router = useRouter(); // Router instance to navigate if needed
+  const [isFormVisible, setIsFormVisible] = useState(false);
 
   // Function to display the application form overlay
   const handleApplyClick = () => {
@@ -31,10 +29,13 @@ const Datascientist = () => {
           {/* Left Section: Image representing the hiring process */}
           <div className="w-full xl:w-1/2 mb-5 xl:mb-0">
             <div className="relative inline-block w-full">
-              <img
+              <Image
                 src="/images/hiring.jpg" // Image for the Data Scientist position
                 alt="Hiring"
                 className="w-full h-auto mx-auto md:mx-7 xl:mx-0 rounded-md"
+                layout="responsive"  // Responsive layout for image
+                width={800}  // Width of the image
+                height={600} // Height of the image
               />
               <div className="absolute top-6 left-8 bg-white p-1 rounded-full shadow-lg"></div>
             </div>
